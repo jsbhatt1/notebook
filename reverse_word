@@ -1,0 +1,13 @@
+import sys
+
+def reverse_word(word):
+    return word[::-1]
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python script.py <word>")
+        sys.exit(1)
+    
+    word = sys.argv[1]
+    reversed_word = reverse_word(word)
+    print(reversed_word)
